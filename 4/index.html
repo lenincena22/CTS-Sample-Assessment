@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="form">
+        <table>
+            <tr>
+                <th><label for="name">Name: </label></th>
+                <td><input type="text" id="name" name="name" placeholder="your name"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email: </label></th>
+                <td><input type="email" id="email" name="email" placeholder="your email"></td>
+            </tr>
+            <tr>
+                <th><label for="passsword">Password: </label></th>
+                <td><input type="password" id="password" name="passsword"></td>
+            </tr>
+            <tr>
+                <th><label for="phoneNumber">Phone Number: </label></th>
+                <td><input type="text" id="phoneNumber" name="passsword" pattern="[789][0-9]{9}"></td>
+            </tr>
+            <tr>
+                <th><label for="">Gender: </label></th>
+                <td>
+                    <label for="male">Male: </label>
+                    <input type="radio" name="male" id="male" value="Male">
+                    <label for="female">Female: </label>
+                    <input type="radio" name="female" id="female" value="Female">
+                    <label for="other">Other:</label>
+                    <input type="radio" name="other" id="other" value="Other">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="language">Language: </label></th>
+                <td>
+                    <select name="language" id="language">
+                        <option value="0">Select Language</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="zip">Zip Code: </label></th>
+                <td><input type="number" id="zip" name="zipCode" pattern="[0-9]*"></td>
+            </tr>
+            <tr>
+                <th><label for="about">About: </label></th>
+                <td><textarea name="about" id="about" cols="20" rows="3"
+                        placeholder="write about yourself.."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Register" id="btn-register"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
